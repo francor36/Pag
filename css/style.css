@@ -1,0 +1,17 @@
+table{
+    text-align: right;
+    
+}
+h1{
+    color: blue;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: grey;
+    font-size:x-large
+    
+}
+nav{
+    float: right;
+}
