@@ -1,17 +1,190 @@
-table{
-    text-align: right;
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
-h1{
-    color: blue;
-    text-align: left;
+
+@font-face {
+    font-family: 'CedarvilleCursive-Regular';
+    src: url('../assent/font/CedarvilleCursive-Regular.ttf');
 }
-a{
+
+@font-face {
+    font-family: 'Satisfy-Regular';
+    src: url('../assent/font/Satisfy-Regular.ttf');
+}
+
+main {
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-family: Satisfy-Regular;
+    font-size: 35px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: grey;
-    font-size:x-large
-    
+    color: rgb(5, 5, 5);
+    font-family: Satisfy-Regular;
+    font-size: 25px;
+
+
 }
-nav{
-    float: right;
+
+nav {
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background-color: rgb(221, 192, 154);
+    padding: 10px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a:hover {
+    color: darkslategrey;
+}
+
+.contenedor {
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assent/img/voguees_moda_tendencias_23394152_zna2xg.jpg);
+}
+
+.contenedor h2 {
+    text-align: center;
+    color: aliceblue;
+    font-family: Satisfy-Regular;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.boton {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333333;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: antiquewhite;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.boton a {
+    text-decoration: none;
+    color: black;
+}
+
+.subtitulo {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Satisfy-Regular;
+    font-size: 35px;
+}
+
+
+.reciente div {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 3px;
+    border: solid 1px #000000;
+
+}
+
+.reciente .fotou {
+    background-image: url(../assent/img/BuzoNuevo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.reciente .fotod {
+    background-image: url(../assent/img/buzo-de-mujer-agnes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.reciente .fotot {
+    background-image: url(../assent/img/1648163732383oversize.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.subtitulod {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Satisfy-Regular;
+    font-size: 35px;
+}
+
+
+
+.destacado div {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 3px;
+    border: solid 1px #000000;
+
+}
+
+.destacado .fotou {
+    background-image: url(../assent/img/tendencias-que-se-haran-grandes-invierno-2022-9-1641033819.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destacado .fotod {
+    background-image: url(../assent/img/SEB_4191-copy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destacado .fotot {
+    background-image: url(../assent/img/prendas-no-pueden-faltar-armario-2-XxXx80.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+footer {
+
+    line-height: 50px;
+    background-color: rgb(221, 192, 154);
+    width: 100%;
+}
+
+.pie p {
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.mapa{
+   display: inline;
+    position: center;
 }
