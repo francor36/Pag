@@ -5,6 +5,7 @@
     list-style: none;
 }
 
+/* ingreso fuentes de la pc*/
 @font-face {
     font-family: 'CedarvilleCursive-Regular';
     src: url('../assent/font/CedarvilleCursive-Regular.ttf');
@@ -15,15 +16,19 @@
     src: url('../assent/font/Satisfy-Regular.ttf');
 }
 
+/* cambio color a la etiqueta main*/
 main {
     background-color: antiquewhite;
+
 }
 
+/*cambio fuente y tamaño*/
 h1 {
     font-family: Satisfy-Regular;
     font-size: 35px;
 }
 
+/*modifico la fuente, el color y el efecto de letras*/
 nav ul li a {
     text-decoration: none;
     color: rgb(5, 5, 5);
@@ -33,26 +38,37 @@ nav ul li a {
 
 }
 
+/*modifico tamaño de mi nav, cambio color*/
 nav {
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     position: fixed;
     padding-left: 5%;
     padding-right: 5%;
     font-weight: bold;
     background-color: rgb(221, 192, 154);
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+@media screen and(max-width: 800px) {
+    background-color: rgb;    
 }
 
+/*digo que este en linea y bloques modificando el espacio*/
 ul li {
     display: inline-block;
     padding: 0px 20px;
 }
 
+/*agrego un colo al pasar por un hipervinvulo*/
 a:hover {
     color: darkslategrey;
 }
 
+/*foto del incio*/
 .contenedor {
     width: 100%;
     height: 60vh;
@@ -62,34 +78,7 @@ a:hover {
     background-image: url(../assent/img/voguees_moda_tendencias_23394152_zna2xg.jpg);
 }
 
-.contenedor h2 {
-    text-align: center;
-    color: aliceblue;
-    font-family: Satisfy-Regular;
-    font-size: 35px;
-    text-decoration: underline;
-}
-
-.boton {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    color: #333333;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: antiquewhite;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 25px;
-}
-
-.boton a {
-    text-decoration: none;
-    color: black;
-}
-
+/*Alineo el texto cambio color y tamaño*/
 .subtitulo {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -97,19 +86,29 @@ a:hover {
     font-size: 35px;
 }
 
-
+.reciente{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:800px) {
+    .reciente {
+        flex-direction: row;
+    }
+    
+}
+/*creo cuadrados de 400px con una altura de 400px*/
 .reciente div {
-    display: inline-block;
     background-repeat: no-repeat;
     background-size: cover;
     width: 400px;
     height: 400px;
-    margin: 30px;
+    margin: 20px;
     border-radius: 3px;
     border: solid 1px #000000;
 
 }
 
+/*le agrego fotos al cuadrado*/
 .reciente .fotou {
     background-image: url(../assent/img/BuzoNuevo.jpg);
     background-size: cover;
@@ -137,6 +136,11 @@ a:hover {
 }
 
 
+/*creo cuadrados de 400px con una altura de 400px*/
+.destacado{
+    display: flex;
+    justify-content: center;
+}
 
 .destacado div {
     display: inline-block;
@@ -144,12 +148,13 @@ a:hover {
     background-size: cover;
     width: 400px;
     height: 400px;
-    margin: 30px;
+    margin: 20px;
     border-radius: 3px;
     border: solid 1px #000000;
 
 }
 
+/*le agrego fotos al cuadrado*/
 .destacado .fotou {
     background-image: url(../assent/img/tendencias-que-se-haran-grandes-invierno-2022-9-1641033819.jpg);
     background-size: cover;
@@ -169,6 +174,7 @@ a:hover {
 
 }
 
+/*el footer, le cambio el color y le doy tamaño*/
 footer {
 
     line-height: 50px;
@@ -176,6 +182,7 @@ footer {
     width: 100%;
 }
 
+/*la calse pie de la etiqueta p cambio fuente y color*/
 .pie p {
     color: white;
     text-align: center;
@@ -184,7 +191,70 @@ footer {
 
 }
 
-.mapa{
-   display: inline;
-    position: center;
+.contenido {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+/*agrego el alineado del mapa*/
+.mapa {
+    text-align: center;
+}
+
+.contacto {
+    text-align: center;
+
+}
+
+.texto {
+    text-align: center;
+}
+
+/*agrego una imagen con el alto y ancho, donde no se repite*/
+.somos {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assent/img/afecta-mascota-llegada-otono_1614749167_144505687_1200x675.jpg);
+}
+
+/*centrado*/
+.nosotros {
+    text-align: center;
+}
+
+/*modifico la etiqueta img*/
+img {
+
+    background-repeat: no-repeat;
+    background-position: absolute;
+    overflow: cover;
+    width: 80%;
+    height: 60vh;
+}
+
+/*alineo la etiqueta table*/
+table {
+    text-align: center;
+}
+
+/*centrado*/
+.Descuento {
+    text-align: center;
+}
+
+.fondo {
+    height: 100vh;
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 210px 210px;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 50px 20px;
 }
